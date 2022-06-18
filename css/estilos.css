@@ -18,9 +18,10 @@ h1, h2 {
 }
 
 body {
-  background-color: black;
+  /* background-color: #3DCE97; */
+  background-color: #45E8A9;
   font-family: Verdana, sans-serif;
-  color: #ffcc22;
+  color: #835126;
 }
 
 .encabezados {
@@ -36,7 +37,7 @@ p {
 
 a {
   text-decoration: none; /* se saca el subrayado de los links */
-  color: #dcd;
+  color: #835126;
   display: flex;
 }
 
