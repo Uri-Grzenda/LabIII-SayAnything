@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Say Anything - Inicio</title>
   <meta charset="UTF-8">
   <meta name="author" content="Uri Grzenda">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos2.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Say Anything - Inicio</title>
 </head>
 
 <body>
-  <header style="background-image: url('./imagenes/bojack-banner.jpg');">
-    <a href="index.html"><img src="./imagenes/Logo-Min.png" alt="home"></a>
-    <h1> Say Anything</h1>
-    <h2> BoJack Horseman</h2>
+
+  <header>
+
+    <div class="encabezado">
+      <a href="index.html"><img id="logo" src="./imagenes/Logo-Min.png" alt="home"></a>
+      <h1> Say Anything</h1>
+      <h2> BoJack Horseman</h2>
+
+    <nav>
+      <ul class="linksNav">
+        <li class="hover"><a href="index.html">Inicio</a></li>
+        <li class="hover"><a href="argumento.html">Argumento</a></li>
+        <li>
+          <a class="hover" href="personajes.html">Personajes</a>
+          <ul>
+            <li class="hover"><a href="bojack.html">BoJack Horseman</a></li>
+            <li class="hover"><a href="carolyn.html">Princess Carolyn</a></li>
+            <li class="hover"><a href="elenco.html">Elenco</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="hover" href="acerca.html">Acerca de</a>
+          <ul><li class="hover"><a href="contacto.html">Contacto</a></li></ul>
+        </li>
+        <li>
+          <a class="hover" href="recepcion.html">Recepción</a>
+          <ul><li class="hover"><a href="opiniones.html">Vuestras opiniones</a></ul></li>
+        </li>
+        <li class="hover"><a href="galeria.html">Galería</a></li>
+        <li class="hover"><a href="soundtrack.html">Banda sonora</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="argumento.html">Argumento</a></li>
-      <li>
-        <a href="personajes.html">Personajes</a>
-        <ul>
-          <li><a href="bojack.html">BoJack Horseman</a></li>
-          <li><a href="carolyn.html">Princess Carolyn</a></li>
-          <li><a href="elenco.html">Elenco</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="acerca.html">Acerca de</a>
-        <ul><li><a href="contacto.html">Contacto</a></li></ul>
-      </li>
-      <li>
-        <a href="recepcion.html">Recepción</a>
-        <ul><li><a href="opiniones.html">Vuestras opiniones</a></ul></li>
-      </li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="soundtrack.html">Banda sonora</a></li>
 
-    </ul>
-  </nav>
 
-  <section>
+  <section class="principal">
     <article>
       <div>
         <img src="./imagenes/bojack-index-1.webp" alt="Portada BoJack en su piscina">
@@ -53,6 +60,7 @@
       <div>
     </article>
 
+    <article>
     <h4> Inicio </h4>
     <p> Te damos la bienvenida a Say Anything. Desplázate sin miedo por nuestro sitio web sobre
        el capítulo de BoJack Horseman que representó para la serie el
@@ -68,7 +76,7 @@
        del espectáculo de Hollywood, los episodios abordan complejos conflictos personales
        y tienen un hilo narrativo serializado.
     </p>
-
+    </article>
 
     <article>
       <div>
@@ -100,29 +108,34 @@
   -->
 
   <footer>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="argumento.html">Argumento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="soundtrack.html">Banda sonora</a></li>
-    </ul>
-    <ul>
-      <li><a href="personajes.html">Personajes</a></li>
-      <li><a href="bojack.html">BoJack Horseman</a></li>
-      <li><a href="carolyn.html">Princess Carolyn</a></li>
-      <li><a href="elenco.html">Elenco</a></li>
-    </ul>
-    <ul>
-      <li><a href="recepcion.html">Recepción</a></li>
-      <li><a href="opiniones.html">Vuestras opiniones</a></li>
-    </ul>
-    <ul>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="argumento.html">Argumento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="soundtrack.html">Banda sonora</a></li>
+      </ul>
+      <ul>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="bojack.html">BoJack Horseman</a></li>
+        <li><a href="carolyn.html">Princess Carolyn</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+      </ul>
+      <ul>
+        <li><a href="recepcion.html">Recepción</a></li>
+        <li><a href="opiniones.html">Vuestras opiniones</a></li>
+      </ul>
+      <ul>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
 
-    <p>Fuente Ness, hecha por ByTheButterfly.com</p>
-    <p>Ness font, made by ByTheButterfly.com</p>
+    <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="imagenes/youtube.png" alt="Youtube"></a>
+    <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+
     <p>Sitio web diseñado por Uri Grzenda</p>
     <p>Todos los derechos reservados, 2022</p>
 

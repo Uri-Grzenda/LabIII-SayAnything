@@ -43,6 +43,29 @@
 
   <h4> Vuestras opiniones </h4>
 
+  <form action="/paginaDestino.php" method="GET">
+    <section>
+      <h4> Dinos qué piensas </h4>
+      <p> Ingresa tu e-mail si quieres que nuestros autores te respondan (?) </p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="capitulo">Capitulo de la primer temporada:</label><br>
+      <input type="number" id="capitulo" name="capitulo" min=1 max=12 required><br>
+      <label for="nuevoUsuario">¿Es su primer visita al sitio?</label><br>
+      <input type="radio" id="nuevoSi" name="nuevoUsuario" value="SI" required>
+      <label for="nuevoSi">Sí</label><br>
+      <input type="radio" id="nuevoNo" name="nuevoUsuario" value="NO" checked="checked" required>
+      <label for="nuevoNo">No</label><br>
+      <label for="opinion">Comentario:</label><br>
+      <p>
+        <textarea id="opinion" name="opinion"></textarea>
+      </p>
+
+      <input type="submit" value="Enviar" id="enviar">
+      <input type="reset" value="Restablecer" id="restablecer">
+
+    </section>
+  </form>
 
   <footer>
     <ul>
@@ -66,8 +89,6 @@
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
 
-    <p>Fuente Ness, hecha por ByTheButterfly.com</p>
-    <p>Ness font, made by ByTheButterfly.com</p>
     <p>Sitio web diseñado por Uri Grzenda</p>
     <p>Todos los derechos reservados, 2022</p>
 
