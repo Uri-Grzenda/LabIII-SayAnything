@@ -61,6 +61,34 @@
 
   </article>
 
+
+  <form class="contacto" action="/paginaDestino.php" method="GET">
+    <section class="texto">
+      <h2> Contacto </h2>
+      <p> Nos encantaría saber tu opinión sobre algún capítulo de la serie.
+      Coloca tu email si quieres recibir nuestras novedades </p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="capitulo">Capitulo de la primer temporada:</label><br>
+      <input type="number" id="capitulo" name="capitulo" min=1 max=12 required><br>
+      <label for="nuevoUsuario">¿Es su primer visita al sitio?</label><br>
+      <input type="radio" id="nuevoSi" name="nuevoUsuario" value="SI" required>
+      <label for="nuevoSi">Sí</label><br>
+      <input type="radio" id="nuevoNo" name="nuevoUsuario" value="NO" checked="checked" required>
+      <label for="nuevoNo">No</label><br>
+      <input type="checkbox" id="temporadaCompleta" name="temporadaCompleta" value="temporadaCompleta">
+      <label for="vehicle1"> Márcame si viste la temporada completa</label><br>
+      <label for="opinion">¿Qué piensas?</label><br>
+      <p>
+        <textarea id="opinion" name="opinion"></textarea>
+      </p>
+
+      <input type="submit" value="Enviar" id="enviar">
+      <input type="reset" value="Restablecer" id="restablecer">
+
+    </section>
+  </form>
+
   <footer>
     <nav>
       <ul>

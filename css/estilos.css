@@ -307,6 +307,43 @@ body h4 {
 
 /* --- </Personajes> --- */
 
+/* --- <Formulario de contacto> --- */
+
+.contacto {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #2dd393;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.contacto * {
+  margin-bottom: 0.5%;
+}
+
+.contacto p {
+  padding-top: 5%;
+}
+.contacto label {
+  margin-top: 3%;
+}
+.contacto input, textarea {
+  margin: 3% 0 2%;
+  padding: 2% 2% 2% 2%;
+  border-radius: 10px;
+  background-color: rgb(85, 252, 208);
+}
+
+.contacto input[type="checkbox"] {
+  margin-bottom: 5%;
+}
+
+.contacto textarea {
+  resize: vertical;
+}
+
+/* --- </Formulario de contacto> --- */
+
+
 /* Footer */
 
 footer {
