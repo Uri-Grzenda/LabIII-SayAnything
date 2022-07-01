@@ -7,6 +7,7 @@
   font-family: Verdana, sans-serif;
 }
 
+
 /* --- <Header General> --- */
 
 header {
@@ -170,6 +171,11 @@ body {
   min-height: 50vh;
 }
 
+body a {
+  text-decoration: none;
+  color: #835126;
+}
+
 
 /* --- <Home> --- */
 .principal img {
@@ -198,15 +204,11 @@ body h4 {
 
 /* --- <Argumento> --- */
 
-.texto p {
-  display: block;
+.texto {
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.texto h4 {
-  margin-left: 20%;
-}
 
 /* --- </Argumento> --- */
 
@@ -218,6 +220,8 @@ body h4 {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /*
@@ -253,6 +257,32 @@ body h4 {
   margin-left: 7%;
   margin-bottom: 5%;
   list-style-type: square;
+}
+
+.punteo li a {
+  font-weight: 600;
+}
+
+.punteo li {
+  margin-bottom: 1%;
+  max-width: 30%;
+  width: auto;
+  /* border-style: dotted;
+  border-color: #FFF; */
+}
+
+.punteo li a::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background: #835126;
+  display: block;
+  margin auto;
+  transition: 0.3s;
+}
+
+.punteo li a:hover::after {
+  width: 100%;
 }
 
 .personaje {
