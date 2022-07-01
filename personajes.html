@@ -5,89 +5,112 @@
   <meta charset="UTF-8">
   <meta name="author" content="Uri Grzenda">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" type="text/css" href="css/estilos.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a href="index.html"><img src="./imagenes/Logo-Min.png" alt="home"></a>
-    <h1> Say Anything</h1>
+
+    <div id="header-izquierda">
+      <a href="index.html"><img id="logo" src="./imagenes/Logo-Min.png" alt="home"></a>
+      <a href="index.html"><h1> Say Anything</h1></a>
+    </div>
+
+    <div id="header-derecha">
+      <nav>
+        <ul class="links-nav">
+          <li class="hover"><a href="index.html">Inicio</a></li>
+          <li class="hover"><a href="argumento.html">Argumento</a></li>
+          <li>
+            <a class="hover" href="personajes.html">Personajes</a>
+            <ul>
+              <li class="hover" class="submenu"><a href="bojack.html">BoJack Horseman</a></li>
+              <li class="hover" class="submenu"><a href="carolyn.html">Princess Carolyn</a></li>
+              <li class="hover" class="submenu"><a href="elenco.html">Elenco</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="hover" href="recepcion.html">Recepción</a>
+            <ul><li class="hover" class="submenu"><a href="opiniones.html">Vuestras opiniones</a></ul></li>
+          </li>
+          <li class="hover"><a href="galeria.html">Galería</a></li>
+          <li class="hover"><a href="soundtrack.html">Banda sonora</a></li>
+
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="argumento.html">Argumento</a></li>
-      <li>
-        <a href="personajes.html">Personajes</a>
-        <ul>
-          <li><a href="bojack.html">BoJack Horseman</a></li>
-          <li><a href="carolyn.html">Princess Carolyn</a></li>
-          <li><a href="elenco.html">Elenco</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="acerca.html">Acerca de</a>
-        <ul><li><a href="contacto.html">Contacto</a></li></ul>
-      </li>
-      <li>
-        <a href="recepcion.html">Recepción</a>
-        <ul><li><a href="opiniones.html">Vuestras opiniones</a></ul></li>
-      </li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="soundtrack.html">Banda sonora</a></li>
 
-    </ul>
-  </nav>
+      <h4> Personajes </h4>
+    <article class = "principal">
+      <p> Dada la extensa variedad de personajes presentes en la serie,
+        de momento mencionaremos únicamente a los que hayan aparecido en el episodio Say Anything.
+        Ellos son:
+      </p>
+    </article>
 
-    <h4> Personajes </h4>
-    <p> Dada la extensa variedad de personajes presentes en la serie,
-      de momento mencionaremos únicamente a los que hayan aparecido en el episodio Say Anything.
-      Ellos son:
-    </p>
-    <ul>
-      <li><a href="bojack.html">BoJack Horseman</a></li>
-      <li><a href="carolyn.html">Princess Carolyn</a></li>
-      <li>Todd Chávez</li>
-      <li>Quentin Tarantulino</li>
-      <li>Laura</li>
-      <li>Charley Witherspoon</li>
-      <li>Vanessa Gekko</li>
-      <li>Sr. Witherspoon</li>
-      <li>Paparazzi Blue-Jay</li>
-      <li>Paparazzi Robin</li>
-      <li>Lenny Turteltaub</li>
-      <li>Herb Kazzaz</li>
-    </ul>
-
-
-    <footer>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="argumento.html">Argumento</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="soundtrack.html">Banda sonora</a></li>
-      </ul>
-      <ul>
-        <li><a href="personajes.html">Personajes</a></li>
+      <ul class = "punteo">
         <li><a href="bojack.html">BoJack Horseman</a></li>
         <li><a href="carolyn.html">Princess Carolyn</a></li>
-        <li><a href="elenco.html">Elenco</a></li>
-      </ul>
-      <ul>
-        <li><a href="recepcion.html">Recepción</a></li>
-        <li><a href="opiniones.html">Vuestras opiniones</a></li>
-      </ul>
-      <ul>
-        <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li>Todd Chávez</li>
+        <li>Quentin Tarantulino</li>
+        <li>Laura</li>
+        <li>Charley Witherspoon</li>
+        <li>Vanessa Gekko</li>
+        <li>Sr. Witherspoon</li>
+        <li>Paparazzi Blue-Jay</li>
+        <li>Paparazzi Robin</li>
+        <li>Lenny Turteltaub</li>
+        <li>Herb Kazzaz</li>
       </ul>
 
+      <article class="galeria" id="galeria_personajes">
+          <a class="example-image-link" href="imagenes/BojackHorseman.jpg" data-lightbox="example-set" data-title="BoJack Horseman"><img class="example-image" src="imagenes/BojackHorseman.jpg" alt="BoJack Horseman"/></a>
+          <a class="example-image-link" href="imagenes/PrincessCarolyn.png" data-lightbox="example-set" data-title="Princess Carolyn"><img class="example-image" src="imagenes/PrincessCarolyn.png" alt="Princess Carolyn"/></a>
+          <a class="example-image-link" href="imagenes/Todd.png" data-lightbox="example-set" data-title="Todd Chávez"><img class="example-image" src="imagenes/Todd.png" alt="Todd Chávez"/></a>
+          <a class="example-image-link" href="imagenes/Laura.jpg" data-lightbox="example-set" data-title="Laura (izquierda)"><img class="example-image" src="imagenes/Laura.jpg" alt="Laura"/></a>
+          <a class="example-image-link" href="imagenes/Tarantulino.jpg" data-lightbox="example-set" data-title="Quentin Tarantulino"><img class="example-image" src="imagenes/Tarantulino.jpg" alt="Quentin Tarantulino"/></a>
+          <a class="example-image-link" href="imagenes/Lenny.webp" data-lightbox="example-set" data-title="Lenny Turteltaub"><img class="example-image" src="imagenes/Lenny.webp" alt="Lenny Turteltaub"/></a>
+          <a class="example-image-link" href="imagenes/Gekko.jpg" data-lightbox="example-set" data-title="Vanessa Gekko"><img class="example-image" src="imagenes/Gekko.jpg" alt="Vanessa Gekko"/></a>
+          <a class="example-image-link" href="imagenes/Robin.webp" data-lightbox="example-set" data-title="Paparazzi Robin"><img class="example-image" src="imagenes/Robin.webp" alt="Paparazzi Robin"/></a>
+          <a class="example-image-link" href="imagenes/Herb_Kazazz.webp" data-lightbox="example-set" data-title="Herb Kazazz"><img class="example-image" src="imagenes/Herb_Kazazz.webp" alt="Herb Kazzaz"/></a>
+          <a class="example-image-link" href="imagenes/Cherley_Witherspoon.webp" data-lightbox="example-set" data-title="Cherley Witherspoon"><img class="example-image" src="imagenes/Charley_Witherspoon.webp" alt="Charley Witherspoon"/></a>
+          <a class="example-image-link" href="imagenes/Mr_Witherspoon.webp" data-lightbox="example-set" data-title="Sr. Witherspoon"><img class="example-image" src="imagenes/Mr_Witherspoon.webp" alt="Sr. Witherspoon"/></a>
+      </article>
 
-      <p>Sitio web diseñado por Uri Grzenda</p>
-      <p>Todos los derechos reservados, 2022</p>
 
-    </footer>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="argumento.html">Argumento</a></li>
+            <li><a href="recepcion.html">Recepción</a></li>
+          </ul>
+          <ul>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="bojack.html">BoJack Horseman</a></li>
+            <li><a href="carolyn.html">Princess Carolyn</a></li>
+          </ul>
+          <ul>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="soundtrack.html">Banda sonora</a></li>
+            <li><a href="elenco.html">Elenco</a></li>
+          </ul>
+
+        </nav>
+
+        <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="imagenes/youtube.png" alt="Youtube"></a>
+        <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+
+        <p>Sitio web diseñado por Uri Grzenda</p>
+        <p>Todos los derechos reservados, 2022</p>
+
+      </footer>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

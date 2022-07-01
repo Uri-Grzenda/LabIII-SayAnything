@@ -1,0 +1,356 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+/* --- <Header General> --- */
+
+header {
+  background-color: #2dd393;
+  max-width: 100%;
+  max-height: 15vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  color: #835126;
+  /* border-style: dotted;
+  border-color: #FFF; */
+}
+
+header h1 {
+  font-size: 2.2rem;
+  display: inline-block;
+  padding-left: 3%;
+  text-decoration: underline;
+  text-decoration-color: #835126;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  display: block;
+  padding-left: 3%;
+}
+
+header a {
+  color: #835126;
+}
+
+/* --- </Header General> --- */
+/* --- <Header Home> --- */
+
+#header-index {
+  background-image: url(../imagenes/SayAnything.jpg);
+  color: #45E8A9;
+  background-color: #2dd393;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 50vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: #835126;
+}
+
+#header-index a {
+  color: #2dd393;
+}
+
+#header-index h1 {
+  display: block;
+  color: #835126;
+}
+
+#logo {
+  max-width: 100%;
+  width: 10%;
+  height: auto;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+#header-index #logo {
+  width: 30%;
+}
+
+
+#header-izquierda {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  /* border-style: dotted;
+  border-color: #FFF; */
+}
+
+#header-derecha {
+  display: inline-block;
+  /*border-style: dotted;
+  border-color: #FFF;*/
+  max-width: 100%;
+  position: absolute;
+  bottom: 1%;
+  right: 0%;
+}
+
+#header-index #header-derecha {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#header-derecha nav {
+  display: inline-block;
+
+  height: auto;
+  /* border-style: dotted;
+  border-color: #FFF; */
+
+}
+
+
+/* Nav header */
+
+
+.links-nav {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #835126;
+
+}
+
+.links-nav li ul li {
+  list-style: none;
+  display: none;
+  position: relative;
+}
+
+
+.links-nav li {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  padding-left: 2%;
+  position: relative;
+  width: 25%;
+
+}
+
+.links-nav li ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #45E8A9;
+}
+
+.links-nav li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #835126;
+}
+
+
+/* --- </Header Home> --- */
+
+
+/* Body */
+
+body {
+  /* background-color: #3DCE97; */
+  background-color: #45E8A9;
+  color: #835126;
+  min-height: 50vh;
+}
+
+
+/* --- <Home> --- */
+.principal img {
+  max-width: 100%;
+  width: 90%;
+  height: auto;
+  display: inline-block;
+  margin: 0% 2% 0% 2%;
+}
+.principal {
+  display: flex;
+  padding: 3% 3% 3% 3%;
+  align-content: center;
+}
+
+body h4 {
+  margin-top: 2%;
+  padding-bottom: 3%;
+}
+
+.principal h4, p {
+  padding-bottom: 3%;
+}
+
+/* --- </Home> --- */
+
+/* --- <Argumento> --- */
+
+.texto p {
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.texto h4 {
+  margin-left: 20%;
+}
+
+/* --- </Argumento> --- */
+
+
+/* --- <Galería> --- */
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*
+.galeria div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+ .galeria div a img {
+  max-width: 18rem;
+  height: auto;
+} */
+
+#galeria_personajes a img {
+  max-height: 15rem;
+  width: auto;
+}
+
+.galeria a img {
+  max-width: 18rem;
+  height: auto;
+  flex-shrink: 0;
+  padding: 2%;
+
+
+
+}
+
+/* --- </Galería> --- */
+/* --- <Personajes> --- */
+
+.punteo {
+  margin-left: 7%;
+  margin-bottom: 5%;
+  list-style-type: square;
+}
+
+.personaje {
+  max-width: 18rem;
+  height: auto;
+  display: inline-block;
+}
+
+.imagen-al-lado {
+  display: inline-block;
+  max-width: 20%;
+  width: 80%;
+  margin-left: 5%;
+}
+.texto-al-lado {
+  display: inline-block;
+  max-width: 75%;
+  width: 65%;
+  margin-left: 5%;
+}
+
+
+/* --- </Personajes> --- */
+
+/* Footer */
+
+footer {
+    background-color: #835126;
+    color: #45E8A9;
+    padding-bottom: 1%;
+}
+
+footer p {
+  margin-left: 4%;
+  margin-top: 1%;
+  padding-bottom: 4%;
+  display: inline;
+}
+
+footer nav {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: inline-block;
+  max-width: 25%;
+  padding-right: 4%;
+}
+
+footer ul li {
+  display: block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #45E8A9;
+}
+
+
+footer li::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background: #45E8A9;
+  display: block;
+  margin auto;
+  transition: 0.3s;
+}
+
+footer li ul li::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background: #45E8A9;
+  display: block;
+  margin auto;
+  transition: 0.3s;
+}
+footer li:hover:after {
+  width: 100%;
+}
+footer li ul li:hover::after {
+  width: 100%;
+}
+
+
+footer img {
+  align-items: center;
+  max-width: 3rem;
+  width: 3%;
+  height: auto;
+  display: inline-block;
+  padding-top: 3%;
+  margin: 0% 2% 0% 3%;
+
+}
