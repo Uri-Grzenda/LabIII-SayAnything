@@ -162,6 +162,21 @@ header a {
   color: #835126;
 }
 
+.links-nav li::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background: #835126;
+  display: block;
+  margin auto;
+  transition: 0.3s;
+}
+
+
+.links-nav li:hover:after {
+  width: 100%;
+}
+
 
 /* --- </Header Home> --- */
 
@@ -189,6 +204,12 @@ body a {
   display: inline-block;
   margin: 0% 2% 0% 2%;
 }
+
+.principal .imagen-mobile {
+  display: none;
+}
+
+
 .principal {
   display: flex;
   padding: 3% 3% 3% 3%;
@@ -448,6 +469,13 @@ footer img {
     padding-bottom: 2%;
   }
 
+  .logo {
+    width: 15%;
+  }
+
+  #headerIndex logo {
+    width: 20%;
+  }
 
   .links-nav li {
     display: block;
@@ -490,6 +518,56 @@ footer img {
 
   .fa-bars {
     right: 25%;
+  }
+
+  /* --- Index --- */
+
+  .principal {
+    margin: 2% 4% 2% 4%;
+    text-align: justify;
+  }
+
+  .principal .imagen-desktop {
+    display: none;
+  }
+
+  .imagen-mobile img {
+    display: block;
+    width: 100%;
+  }
+
+  .principal article {
+    display: block;
+  }
+
+  /* --- Argumento --- */
+
+  .texto {
+    margin: 2% 8% 2% 8%;
+    text-align: justify;
+  }
+  .texto p {
+    padding: 4% 0% 4% 0%;
+  }
+
+  /* --- Footer --- */
+
+  footer {
+    min-height: 20vh;
+  }
+
+  footer p {
+    display: block;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  footer div {
+    text-align: center;
+    padding: 2%;
+  }
+  footer div img {
+    width: 10%;
   }
 
 }
