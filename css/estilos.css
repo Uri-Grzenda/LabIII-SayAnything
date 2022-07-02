@@ -205,7 +205,7 @@ body a {
   margin: 0% 2% 0% 2%;
 }
 
-.principal .imagen-mobile {
+.imagen-mobile {
   display: none;
 }
 
@@ -456,9 +456,10 @@ footer img {
 
 }
 
-.fa {
+#awesomeEquis, #awesomeBarras {
   display: none;
 }
+
 
 
 /* Media Querys 480px */
@@ -501,8 +502,12 @@ footer img {
     text-align: left;
     transition: 0.5s;
   }
-  nav .fa{
+
+  #awesomeEquis, #awesomeBarras {
     display: block;
+  }
+
+  nav .fa{
     position: relative;
     font-size: 1.4rem;
     margin: 5% 5% 0% 4%;
@@ -531,7 +536,7 @@ footer img {
     display: none;
   }
 
-  .imagen-mobile img {
+  .imagen-mobile {
     display: block;
     width: 100%;
   }
