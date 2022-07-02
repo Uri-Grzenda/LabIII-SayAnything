@@ -540,6 +540,16 @@ footer img {
     display: block;
   }
 
+  .punteo li {
+    max-width: 80%;
+    text-align: center;
+    padding: 2% 0% 2% 0%;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
   /* --- Argumento --- */
 
   .texto {
@@ -550,11 +560,34 @@ footer img {
     padding: 4% 0% 4% 0%;
   }
 
-  /* --- Footer --- */
-
-  footer {
-    min-height: 20vh;
+  /* --- Personajes --- */
+  .punteo li {
+    width: 100%;
   }
+
+  .imagen-al-lado, .texto-al-lado {
+    width: 90%;
+    margin: 10%;
+    display: block;
+    text-align: justify;
+  }
+
+  .texto-al-lado p {
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  /* --- Formulario --- */
+  .contacto {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #2dd393;
+    padding-top: 5%;
+    padding-bottom: 3%;
+
+  }
+
+  /* --- Footer --- */
 
   footer p {
     display: block;
@@ -569,5 +602,6 @@ footer img {
   footer div img {
     width: 10%;
   }
+
 
 }
