@@ -435,15 +435,61 @@ footer img {
 
 }
 
-
+i {
+  display: none;
+}
 
 
 /* Media Querys 480px */
 
 @media(max-width: 480px) {
-    header h1 {
+  header h1 {
     font-size: 1.5rem;
-    color: #000;
     padding-bottom: 2%;
   }
+
+
+  .links-nav li {
+    display: block;
+    font-size: 0.7rem;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .links-nav li a {
+    color: #2dd393;
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .links-nav {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    right: -100%;
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    background-color: #835126;
+    text-align: left;
+    transition: 0.5s;
+  }
+  nav .fa{
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    margin: 5% 5% 0% 4%;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    margin
+  }
+
+  .links-nav ul {
+    margin: 3%;
+  }
+
+  .fa-bars {
+    right: 25%;
+  }
+
 }

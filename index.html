@@ -5,6 +5,7 @@
   <meta name="author" content="Uri Grzenda">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/8d7a8cc07d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <title>Say Anything - Inicio</title>
 </head>
@@ -15,13 +16,15 @@
 
     <div class="header-izquierda">
       <a href="index.html"><img id="logo" src="./imagenes/Logo-Min.png" alt="home"></a>
-      <a href="index.html"><h1> Say Anything</h1></a>
+      <h1> Say Anything</h1>
       <h2> BoJack Horseman</h2>
     </div>
 
     <div class="header-derecha">
       <nav>
-        <ul class="links-nav">
+        <ul class="links-nav" id="linksNav">
+          <i class="fa fa-times" id="awesomeEquis" onclick="esconderMenu()"></i>
+
           <li class="hover"><a href="index.html">Inicio</a></li>
           <li class="hover"><a href="argumento.html">Argumento</a></li>
           <li>
@@ -40,6 +43,9 @@
           <li class="hover"><a href="elenco.html">Elenco</a></li>
 
         </ul>
+
+        <i class="fa fa-bars" id="awesomeBarras" onclick="mostrarMenu()"></i>
+
       </nav>
     </div>
   </header>
@@ -152,7 +158,6 @@
 
   </footer>
 
-
-
+<script src="js/alternarMenu.js"></script>
 </body>
 </html>
