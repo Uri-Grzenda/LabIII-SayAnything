@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Say Anything - Personajes</title>
   <meta charset="UTF-8">
   <meta name="author" content="Uri Grzenda">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <script src="https://kit.fontawesome.com/8d7a8cc07d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/8d7a8cc07d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <title>Say Anything - Inicio</title>
 </head>
 
 <body>
+
   <header id="header-index">
 
     <div class="header-izquierda">
-      <a href="index.html"><img id="logo" src="./imagenes/Logo-Min.png" alt="home"></a>
-      <h2 class="titulo-header" > Say Anything</h2>
-      <h2 class="titulo-header"> BoJack Horseman</h2>
+      <a href="index.html"><img class="logo" src="./imagenes/Logo-Min.png" alt="home"></a>
+      <div class="div-titulos">
+        <h2 class="titulo-header" > Say Anything</h2>
+        <h3 class="titulo-header"> BoJack Horseman</h3>
+      </div>
     </div>
-
-    <!--
-    <div class="header-derecha">
-      <nav>
-        <ul class="links-nav" id="linksNav">
-          <i class="fa fa-times" id="awesomeEquis" onclick="esconderMenu()"></i>
-
-          <li class="hover"><a href="index.html">Inicio</a></li>
-          <li class="hover"><a href="argumento.html">Argumento</a></li>
-          <li>
-            <a class="hover" href="personajes.html">Personajes</a>
-            <ul>
-              <li class="hover" class="submenu"><a href="bojack.html">BoJack Horseman</a></li>
-              <li class="hover" class="submenu"><a href="carolyn.html">Princess Carolyn</a></li>
-              <li class="hover" class="submenu"><a href="elenco.html">Elenco</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="hover" href="recepcion.html">Recepción</a>
-            <ul><li class="hover" class="submenu"><a href="opiniones.html">Vuestras opiniones</a></ul></li>
-          </li>
-          <li class="hover"><a href="galeria.html">Galería</a></li>
-          <li class="hover"><a href="elenco.html">Elenco</a></li>
-
-        </ul>
-
-        <i class="fa fa-bars" id="awesomeBarras" onclick="mostrarMenu()"></i>
-
-      </nav>
-    </div>
-  -->
+    <i class="fa fa-bars" id="awesomeBarras" onclick="mostrarMenu()"></i>
   </header>
 
+  <nav id="nav-principal">
+    <ul class="links-nav" id="linksNav">
+      <i class="fa fa-times" id="awesomeEquis" onclick="esconderMenu()"></i>
+      <li class="hover"><a href="index.html">Inicio</a></li>
+      <li class="hover"><a href="argumento.html">Argumento</a></li>
+      <li class="hover"><a href="personajes.html">Personajes</a></li>
+      <li class="solo-mobile"><a href="bojack.html">BoJack Horseman</a></li>
+      <li class="solo-mobile"><a href="carolyn.html">Princess Carolyn</a></li>
+      <li class="hover"><a href="recepcion.html">Críticas</a></li>
+      <li class="hover"><a href="galeria.html">Galería</a></li>
+      <li class="hover"><a href="elenco.html">Elenco</a></li>
+    </ul>
+  </nav>
 
 
     <article class = "texto">
@@ -62,6 +51,7 @@
         Ellos son:
       </p>
 
+      <!--
       <ul class = "punteo">
         <li><a href="bojack.html">BoJack Horseman</a></li>
         <li><a href="carolyn.html">Princess Carolyn</a></li>
@@ -76,36 +66,69 @@
         <li>Lenny Turteltaub</li>
         <li>Herb Kazzaz</li>
       </ul>
-
+    -->
     </article>
 
 
 
 
-      <article class="galeria" id="galeria_personajes">
+      <article class="galeria-epigrafe" id="galeria_personajes">
+        <div>
           <a class="example-image-link" href="imagenes/BojackHorseman.jpg" data-lightbox="example-set" data-title="BoJack Horseman"><img class="example-image" src="imagenes/BojackHorseman.jpg" alt="BoJack Horseman"/></a>
+          <a class="galeria-link" href="bojack.html">BoJack Horseman</a>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/PrincessCarolyn.png" data-lightbox="example-set" data-title="Princess Carolyn"><img class="example-image" src="imagenes/PrincessCarolyn.png" alt="Princess Carolyn"/></a>
+          <a class="galeria-link" href="bojack.html">Princess Carolyn</a>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Todd.png" data-lightbox="example-set" data-title="Todd Chávez"><img class="example-image" src="imagenes/Todd.png" alt="Todd Chávez"/></a>
+          <p>Todd Chávez</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Laura.jpg" data-lightbox="example-set" data-title="Laura (izquierda)"><img class="example-image" src="imagenes/Laura.jpg" alt="Laura"/></a>
+          <p>Laura</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Tarantulino.jpg" data-lightbox="example-set" data-title="Quentin Tarantulino"><img class="example-image" src="imagenes/Tarantulino.jpg" alt="Quentin Tarantulino"/></a>
+          <p>Quentin Tarantulino</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Lenny.webp" data-lightbox="example-set" data-title="Lenny Turteltaub"><img class="example-image" src="imagenes/Lenny.webp" alt="Lenny Turteltaub"/></a>
+          <p>Lenny Turteltaub</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Gekko.jpg" data-lightbox="example-set" data-title="Vanessa Gekko"><img class="example-image" src="imagenes/Gekko.jpg" alt="Vanessa Gekko"/></a>
+          <p>Vanessa Gekko</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Robin.webp" data-lightbox="example-set" data-title="Paparazzi Robin"><img class="example-image" src="imagenes/Robin.webp" alt="Paparazzi Robin"/></a>
+          <p>Paparazzi Robin</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Herb_Kazazz.webp" data-lightbox="example-set" data-title="Herb Kazazz"><img class="example-image" src="imagenes/Herb_Kazazz.webp" alt="Herb Kazzaz"/></a>
+          <p>Herb Kazzaz</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Charley_Witherspoon.webp" data-lightbox="example-set" data-title="Charley Witherspoon"><img class="example-image" src="imagenes/Charley_Witherspoon.webp" alt="Charley Witherspoon"/></a>
+          <p>Charley Witherspoon</p>
+        </div>
+        <div>
           <a class="example-image-link" href="imagenes/Mr_Witherspoon.webp" data-lightbox="example-set" data-title="Sr. Witherspoon"><img class="example-image" src="imagenes/Mr_Witherspoon.webp" alt="Sr. Witherspoon"/></a>
+          <p>Mr. Witherspoon</p>
+        </div>
       </article>
 
 
       <footer>
         <nav>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html"><strong>Inicio</strong></a></li>
             <li><a href="argumento.html">Argumento</a></li>
-            <li><a href="recepcion.html">Recepción</a></li>
+            <li><a href="recepcion.html">Críticas</a></li>
           </ul>
           <ul>
-            <li><a href="personajes.html"><strong>Personajes</strong></a></li>
+            <li><a href="personajes.html">Personajes</a></li>
             <li><a href="bojack.html">BoJack Horseman</a></li>
             <li><a href="carolyn.html">Princess Carolyn</a></li>
           </ul>
@@ -116,18 +139,19 @@
 
         </nav>
 
-        <div>
-          <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
-          <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
-          <a href="#"><img src="imagenes/youtube.png" alt="Youtube"></a>
-          <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+        <div class="footer-flex">
+          <p>Sitio web diseñado por Uri Grzenda</p>
+          <p>Todos los derechos reservados, 2022</p>
+          <div>
+            <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="imagenes/youtube.png" alt="Youtube"></a>
+            <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+          </div>
         </div>
-
-        <p>Sitio web diseñado por Uri Grzenda</p>
-        <p>Todos los derechos reservados, 2022</p>
-
       </footer>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+
     <script src="js/alternarMenu.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

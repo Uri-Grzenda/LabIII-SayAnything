@@ -235,7 +235,7 @@ body a {
 
 body h1 {
   padding-bottom: 1.5%;
-  padding-top: 3%;
+  padding-top: 5%;
   font-size: 1.2rem;
 
 }
@@ -259,6 +259,16 @@ body h1 {
   display: flex;
   padding: 3% 3% 3% 3%;
   align-content: center;
+}
+
+
+.entre-parrafos img {
+  display: block;
+  max-width: 80%;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-bottom: 4%;
+
 }
 
 body h4 {
@@ -296,6 +306,55 @@ body h4 {
   margin-right: 15%;
 }
 
+.galeria-epigrafe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.galeria-epigrafe div {
+  padding: 2%;
+  max-width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.galeria-epigrafe div a {
+  display: block;
+}
+
+.galeria-epigrafe div .galeria-link {
+  font-weight: bold;
+}
+
+.galeria-epigrafe div p {
+  max-width: 70%;
+  margin-left: 15%;
+}
+
+.galeria-epigrafe div a img {
+  max-height: 12rem;
+  height: auto;
+
+}
+
+.galeria-epigrafe .galeria-link::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background: #835126;
+  display: block;
+  margin auto;
+  transition: 0.3s;
+}
+
+.galeria-epigrafe .galeria-link:hover::after {
+  width: 100%;
+}
+
 /*
 .galeria div {
   display: flex;
@@ -308,7 +367,7 @@ body h4 {
 } */
 
 #galeria_personajes a img {
-  max-height: 15rem;
+  max-height: 12rem;
   width: auto;
 }
 
@@ -520,7 +579,9 @@ footer img {
   display: none;
 }
 
-
+#nav-principal .links-nav .solo-mobile {
+  display: none;
+}
 
 /* ------- Media Querys 480px ------- */
 
@@ -546,6 +607,9 @@ footer img {
 
   #headerIndex logo {
     width: 20%;
+  }
+  #nav-principal .links-nav .solo-mobile {
+    display: block;
   }
 
   .links-nav li {
@@ -573,9 +637,9 @@ footer img {
     transition: 0.5s;
   }
   #awesomeBarras {
-    position: relative;
-    left: 95%;
-    margin-top: 15.5%;
+    position: fixed;
+    top: 1%;
+    right: 1%;
   }
 
   #awesomeEquis {
@@ -632,7 +696,7 @@ footer img {
 
   .punteo li {
     max-width: 80%;
-    text-align: center;
+    text-align: left;
     padding: 2% 0% 2% 0%;
   }
 
@@ -650,10 +714,24 @@ footer img {
     padding: 4% 0% 4% 0%;
   }
 
+  .punteo-extenso {
+    padding-bottom: 5%;
+  }
+
+  .entre-parrafos img {
+    display: block;
+    max-width: 98%;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 4%;
+
+  }
+
   /* --- Personajes --- */
   .punteo li {
     width: 100%;
   }
+
 
   .imagen-al-lado, .texto-al-lado {
     width: 90%;
@@ -670,6 +748,22 @@ footer img {
   #galeria_personajes {
     display: block;
   }
+
+  .galeria-epigrafe {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .galeria-epigrafe div p {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  .galeria-epigrafe div img {
+    margin: 0;
+  }
+
 
   /* --- Formulario --- */
   .contacto {
